@@ -1,4 +1,5 @@
 import { darkTheme } from "@/app/page"
+import Link from "next/link"
 import { useContext } from "react"
 
 export const Navbar = (props) => {
@@ -14,7 +15,9 @@ export const Navbar = (props) => {
                 <img onClick={props.mobileMenuOpen} src="/icon.svg" className="sm:hidden"/>
                 <div className="hidden sm:flex items-center gap-3">
                     <p>About</p>
-                    <p>Work</p>
+                    <Link href='https://portfolionmtesting.vercel.app/'>
+                        <p>Work</p>
+                    </Link>
                     <p>Testimonials</p>
                     <p>Contact</p>
                     <div className="md:flex md:gap-5">

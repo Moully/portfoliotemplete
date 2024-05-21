@@ -13,6 +13,15 @@ export const Getintouch = (props)=>{
                         <img className={`${props.pagemode > 0 ? "invert" : ""} h-full w-full`} src="/copy.svg" width={24} height={24}/>
                     </div>
                 </div>
+                <div className="flex gap-[10px]">
+                    <div className="w-[24px] h-[24px]">
+                        <img className={`${props.pagemode > 0 ? "invert" : ""} h-full w-full`} src="/github-42.svg"/>
+                    </div>
+                    <p className="font-semibold text-[18px]">https://github.com/Moully</p>
+                    <div className="w-[24px] h-[24px]">
+                        <img className={`${props.pagemode > 0 ? "invert" : ""} h-full w-full`} src="/copy.svg" width={24} height={24}/>
+                    </div>
+                </div>
             </div>
         </div>
     )

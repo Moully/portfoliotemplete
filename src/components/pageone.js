@@ -47,26 +47,6 @@ export const Pageone = (props) => {
             <p>Available for new projects</p>
           </div>
         </div>
-        <div className="flex gap-5">
-          <img
-            className={props.pagemode > 0 ? "invert" : ""}
-            src="/github-42.svg"
-            width={30}
-            height={30}
-          />
-          <img
-            className={props.pagemode > 0 ? "invert" : ""}
-            src="/twitter-154.svg"
-            width={30}
-            height={30}
-          />
-          <img
-            className={props.pagemode > 0 ? "invert" : ""}
-            src="/figma-2.svg"
-            width={30}
-            height={30}
-          />
-        </div>
       </div>
     </div>
   );
