@@ -9,7 +9,7 @@ import { createContext, useState } from 'react'
 
 export const darkTheme = createContext()
 export default function Home() {
-  const [pagemode, setPagemode] = useState(0)
+  const [pagemode, setPagemode] = useState(1)
   const [mobilemenu, setMobilemenu] = useState(1)
   return (
     <darkTheme.Provider value={{pagemode, setPagemode}}>
