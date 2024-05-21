@@ -1,72 +1,110 @@
+import Image from "next/image"
+
 export const Skills =(props)=>{
     return (
         <div className="flex flex-col items-center my-10 gap-[10px]">
             <h2 className={`px-[20px] ${props.pagemode > 0 ? "bg-[#4B5563]": "bg-[#E5E7EB]"} rounded-lg`}>Skills</h2>
-            <p>The skills, tools and technologies i am really good at:</p>
-            <div className="w-full grid grid-cols-3 md:grid-cols-8 gap-[5px]">
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>JavaScript</p>
+            <p>The skills, tools and technologies i use for projects:</p>
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[5px]">
+                <div className="flex flex-col gap-[10px] place-content-between">
+                    <h3 className="text-center font-bold text-[18px]">Front-End Development</h3>
+                    <div className="flex gap-[10px] items-center">
+                        <Image src={'/logos/html.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                        <p>Hypertext Markup Language</p>
+                    </div>
+                    <div className="flex gap-[10px] items-center">
+                        <Image src={'/logos/css.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                        <p>Cascading Style Sheets</p>
+                    </div>
+                    <div className="flex gap-[10px] items-center">
+                        <Image src={'/logos/javascript.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                        <p>Programming Language</p>
+                    </div>
+                    <div className="flex gap-[10px] items-center">
+                        <Image src={'/logos/typescript.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                        <p>Superset of JavaScript</p>
+                    </div>
+                    <div className="flex gap-[10px] items-center">
+                        <Image src={'/logos/react.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                        <p>JavaScript Library for Building User Interfaces</p>
+                    </div>
+                    <div className="flex gap-[10px] items-center">
+                        <Image src={'/logos/next-js.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                        <p>React Framework for Server-Side Rendering and Static Site Generation</p>
+                    </div>
+                    <div className="flex gap-[10px] items-center">
+                        <Image src={'/logos/bootstrap.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                        <p>CSS Framework</p>
+                    </div>
+                    <div className="flex gap-[10px] items-center">
+                        <Image src={'/logos/material-ui.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                        <p>React UI Framework</p>
+                    </div>
+                    <div className="flex gap-[10px] items-center">
+                        <Image src={'/logos/tailwind.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                        <p>Utility-First CSS Framework</p>
+                    </div>
                 </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>TypeScript</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>React</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Next.js</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Node.js</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Express.js</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Nest.JS</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Socket.io</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>PostgreSQL</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>MongoDB</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Sass/Scss</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Tailwindcss</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Figma</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Cypress</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Storybook</p>
-                </div>
-                <div className="flex flex-col items-center gap-[3px]">
-                    <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={64} height={64}/>
-                    <p>Git</p>
+                <div  className="flex flex-col gap-[10px]">
+                    <div className="flex flex-col gap-[10px]">
+                        <h3 className="text-center font-bold text-[18px]">BackEnd</h3>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/node-js.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>Nodejs:JavaScript Runtime Environment</p>
+                        </div>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/node-js.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>Nodejs:JavaScript Runtime Environment</p>
+                        </div>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/express.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>Web Application Framework for Node.js</p>
+                        </div>
+                    </div>
+                    <div  className="flex flex-col gap-[10px]">
+                        <h3 className="text-center font-bold text-[18px]">Database</h3>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/mongodb.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>NoSQL Database</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-[10px]">
+                        <h3 className="text-center font-bold text-[18px]">API</h3>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/rest-api.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>Representational State Transfer</p>
+                        </div>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/graphql.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>Query Language for APIs</p>
+                        </div>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/jwt.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>Standard for Creating Access Tokens</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-[10px]">
+                        <h3 className="text-center font-bold text-[18px]">Testing</h3>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/jest-js-icon.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>JavaScript Testing Framework</p>
+                        </div>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/cypress.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>End-to-End Testing Framework</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-[10px]">
+                        <h3 className="text-center font-bold text-[18px]">Tools & Utilities</h3>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/github.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>Version Control and Collaboration Platform</p>
+                        </div>
+                        <div className="flex gap-[10px] items-center">
+                            <Image src={'/logos/eslint.svg'} width={200} height={200} className="h-[50px] w-[50px]" alt="html"/>
+                            <p>Linting Tool for JavaScript and TypeScript</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -8,26 +8,9 @@ export const Getintouch = (props)=>{
                     <div className="w-[24px] h-[24px]">
                         <img className={`${props.pagemode > 0 ? "invert" : ""} h-full w-full`} src="/mail.svg"/>
                     </div>
-                    <p className="font-semibold text-[18px]">reachsagarshah@gmail.com</p>
+                    <p className="font-semibold text-[18px]">amoramgl@gmail.com</p>
                     <div className="w-[24px] h-[24px]">
                         <img className={`${props.pagemode > 0 ? "invert" : ""} h-full w-full`} src="/copy.svg" width={24} height={24}/>
-                    </div>
-                </div>
-                <div className="flex gap-[10px]">
-                    <div className="w-[24px] h-[24px]">
-                        <img className={`${props.pagemode > 0 ? "invert" : ""} h-full w-full`} src="/phone.svg"/>
-                    </div>
-                    <p className="font-semibold text-[18px]">reachsagarshah@gmail.com</p>
-                    <div className="w-[24px] h-[24px]">
-                        <img className={`${props.pagemode > 0 ? "invert" : ""} h-full w-full`} src="/copy.svg" width={24} height={24}/>
-                    </div>
-                </div>
-                <div>
-                    <p>You may also find me on these platforms!</p>
-                    <div className="flex gap-5 justify-center py-[10px]">
-                        <img className={props.pagemode > 0 ? "invert" : ""} src="/github-42.svg" width={30} height={30}/>
-                        <img className={props.pagemode > 0 ? "invert" : ""} src="/twitter-154.svg" width={30} height={30}/>
-                        <img className={props.pagemode > 0 ? "invert" : ""} src="/figma-2.svg" width={30} height={30}/>
                     </div>
                 </div>
             </div>

@@ -3,11 +3,9 @@ import { Navbar } from '../components/navbar'
 import { Pageone } from '../components/pageone'
 import { AboutMe } from '../components/aboutme'
 import { Skills } from '../components/skill'
-import { Experience} from '../components/experience'
 import { Getintouch } from '../components/getintouch'
 import { Mobilemenu } from '@/components/mobilemenu';
 import { createContext, useState } from 'react'
-import { Work } from '@/components/work';
 
 export const darkTheme = createContext()
 export default function Home() {
@@ -21,8 +19,6 @@ export default function Home() {
         <Pageone pagemode ={pagemode}/>
         <AboutMe pagemode ={pagemode}/>
         <Skills  pagemode ={pagemode}/>
-        <Work pagemode ={pagemode}/>
-        <Experience pagemode ={pagemode}/>
         <Getintouch pagemode ={pagemode}/>
 
               <Mobilemenu
